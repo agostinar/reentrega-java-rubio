@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>PromediApp</title>
+</head>
+<body>
+    <header>
+        <img src="images/logopromediapp.png" alt="Logo de PromediApp" style="width: 100px; height: 100px;">
+        <h1>Bienvenido a PromediApp</h1>
+    </header>
+
+    <div id="registro" style="display: block;">
+        <h2>Registrarse</h2>
+        <form id="registroForm">
+            <label for="nombreUsuarioRegistro">Nombre de usuario:</label>
+            <input type="text" id="nombreUsuarioRegistro" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <div id="inicioSesion" style="display: block;">
+        <h2>Iniciar Sesión</h2>
+        <form id="inicioSesionForm">
+            <label for="usuarioSesion">Nombre de usuario:</label>
+            <input type="text" id="usuarioSesion" required>
+            <label for="contrasenaSesion">Contraseña:</label>
+            <input type="password" id="contrasenaSesion" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div id="confirmacionIdentidad" style="display: none;">
+        <h2>Confirmación de Identidad</h2>
+        <form id="confirmacionIdentidadForm">
+            <label for="idUsuario">ID de usuario:</label>
+            <input type="text" id="idUsuario" required>
+            <button type="submit">Confirmar</button>
+        </form>
+    </div>
+
+    <div id="calculadora" style="display: none;">
+        <h2>Calculadora de Promedios</h2>
+        <form id="calculoPromedioForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="notas">Notas (separadas por comas):</label>
+            <input type="text" id="notas" required>
+            <button type="submit">Calcular Promedio</button>
+        </form>
+        <div id="resultadosCalculadora"></div>
+        <button id="cerrarSesionBtn">Cerrar Sesión</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
